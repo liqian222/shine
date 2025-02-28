@@ -13,12 +13,12 @@
     <!-- 创建一个用于显示柱状图的div -->
     <div id="main" style="width: 600px;height:400px;"></div>
 
-    <script>
+    <script type="module">
         import * as echarts from 'echarts';
 
-        var chartDom = document.getElementById('main');
-        var myChart = echarts.init(chartDom);
-        var option;
+        const chartDom = document.getElementById('main');
+        const myChart = echarts.init(chartDom);
+        let option;
 
         option = {
             title: {
